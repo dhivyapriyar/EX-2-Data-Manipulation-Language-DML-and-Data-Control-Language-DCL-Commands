@@ -99,31 +99,10 @@ select ename from manager where designation!='manager';
 ![2 7](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/22b6a2c2-16e3-4db9-944f-49042ab49384)
 
 
-### Q8)	List employees whose name either start or end with ‘s’.
 
 
-### QUERY:
-```
-select ename from managers where ename LIKE 'S%' OR ename LIKE '%S';
-```
 
-### OUTPUT:
-![image](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/9717224b-dbec-4339-a733-ca126dd4fc2a)
-
-
-### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
-
-
-### QUERY:
-```
-select ename,designation,deptno,hiredate from managers order by hiredate ASC;
-```
-
-### OUTPUT:
-![image](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/4cb8f738-0aa8-4a8f-ac21-b7ca07f296c7)
-
-
-### Q10) List the Details of Employees whose salary is more than 30000.
+### Q8) List the Details of Employees whose salary is more than 30000.
 
 
 ### QUERY:
@@ -135,7 +114,7 @@ select * from manager where annualsalary>30000;
 ![2 10](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/6d319e5c-5d01-4e9a-8173-bb6f765b5f97)
 
 
-### Q11) To count the number of rows present.
+### Q9) To count the number of rows present.
 
 
 ### QUERY:
@@ -147,7 +126,7 @@ select count(*) as rownumber from manager;
 ![2 11](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/481fd478-a73d-46b5-8c1d-4daac478c368)
 
 
-### Q12) List the names of employees not belonging to dept no 10
+### Q10) List the names of employees not belonging to dept no 10
 
 
 ### QUERY:
@@ -158,7 +137,7 @@ select count(*) as rownumber from manager;
 ### OUTPUT:
 ![2 12](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/bade32f8-33ef-4082-8a42-cbf19a970adf)
 
-### Q13) Find number of rows in the table EMP
+### Q11) Find number of rows in the table EMP
 
 ### QUERY:
 ```
@@ -169,7 +148,7 @@ select count(*) as rownumber from manager;
 ![2 11](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/3060da67-aa4f-4e3c-a95b-c468ad8c490b)
 
 
-### Q14) Find maximum, minimum and average salary in EMP table.
+### Q12) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
 ```
@@ -181,7 +160,7 @@ select max(salary) as maximumsal,min(salary) as minimumsal,avg(salary) as averag
 ![2 13](https://github.com/dhivyapriyar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119477552/ddc9fed0-3444-4bb8-80b1-6ebcfd75cdff)
 
 
-### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
+### Q13) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
 ### QUERY:
 ```
